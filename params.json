@@ -1,0 +1,10 @@
+{
+"fastq": "data/sample.fastq.gz",
+"soi": "data/SERPINA1_from_customer.fa",
+"ref": "indexes/Mus_musculus.GRCm39.dna.primary_assembly.fa",
+"genes_bed": "indexes/Mus_musculus.GRCm39.104.genes.bed",
+"extra_ref": "",
+"sample_prefix": "PREFIX",
+"coverage": "0 3 5 10",
+"outdir": "results"
+}

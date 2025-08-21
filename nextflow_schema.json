@@ -1,0 +1,17 @@
+{
+"$schema": "https://json-schema.org/draft-07/schema",
+"title": "loreta parameters",
+"type": "object",
+"properties": {
+"fastq": { "type": "string", "format": "path", "description": "Input ONT FASTQ(.gz)" },
+"soi": { "type": "string", "format": "path", "description": "Sequence-of-interest FASTA" },
+"ref": { "type": "string", "format": "path", "description": "Reference genome FASTA" },
+"genes_bed": { "type": "string", "format": "path", "description": "Genes BED for event annotation" },
+"extra_ref": { "type": "string", "description": "(Optional) Extra reference FASTA for whole-read mapping" },
+"sample_prefix": { "type": "string", "default": "sample" },
+"coverage": { "type": ["string","array"], "default": "0 3 5 10", "description": "Coverage thresholds (e.g. '0 3 5 10')" },
+"outdir": { "type": "string", "default": "results" }
+},
+"required": ["fastq","soi","ref","genes_bed"],
+"additionalProperties": false
+}

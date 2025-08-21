@@ -1,0 +1,16 @@
+name: loreta
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+- python >=3.9
+- numpy
+- porechop
+- fastp
+- nanoplot
+- minimap2
+- samtools
+- mosdepth
+- deeptools
+- bedtools
+- seqkit
+- seqtk
+- sniffles
